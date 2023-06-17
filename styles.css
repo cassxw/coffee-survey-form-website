@@ -29,7 +29,7 @@ header {
 form {
     width: 60vw;
     max-width: 500px;
-    min-width: 440px;
+    min-width: 460px;
 
     margin: 20px auto;
     padding-bottom: 10px;
@@ -56,7 +56,11 @@ textarea,
 select {
     margin: 10px 0 0 0;
     width: 100%;
+    max-width: 450px;    
     min-height: 2em;
+
+    font-family: inherit;
+    line-height: inherit;
 }
 
 input[type="radio"],
@@ -74,9 +78,17 @@ textarea {
     resize: vertical;
 }
 
+input::placeholder,
+textarea::placeholder,
+select::placeholder,
+option {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(96, 88, 83);
+}
+
 #submit {
     display: block;
-    width: 25%; 
+    width: 25%;
     margin: 20px auto;
     padding: 0.75rem;
 
@@ -84,7 +96,8 @@ textarea {
     border-radius: 5px;
     border-color: black;
 
-    font-weight: 800px;
+    font-family: inherit;
+    font-size: 30px;
     color: white;
     cursor: pointer;
 }
