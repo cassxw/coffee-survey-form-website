@@ -5,7 +5,7 @@ body {
 
     background-image: linear-gradient(rgba(76, 58, 41, 0.434), rgba(74, 38, 15, 0.442)), url(coffee.jpg);
     background-size: cover;
-    
+
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     color: white;
@@ -37,8 +37,8 @@ form {
     max-width: 500px;
     min-width: 440px;
 
-    margin: 0 auto;
-    padding-bottom: 2em;
+    margin: 20px auto;
+    padding-bottom: 10px;
 
     background-color: white;
 
@@ -47,11 +47,34 @@ form {
 
 label {
     display: block;
+    margin: 10px auto;
     padding: 10px;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+#submit {
+    display: block;
+    width: 25%; 
+    margin: auto;
+    padding: 0.75rem;
+
+    background: rgba(74, 38, 15, 0.442);
+    border-radius: 2px;
+    border-color: black;
+
+    cursor: pointer;
 }
